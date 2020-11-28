@@ -7,8 +7,7 @@ var symbols = ['@','"',';','=','\\','%','+','<','>','&','*','/',"'",'!','#', '$'
 //Function to generate password
 function generatePassword() {
 var validChar =[];
-var userChar = [];
-var finalPassword = [];
+var finalPassword = "";
 var passlength = prompt('How many characters would you like you password to have?');
 
 // conditionals to check password length.
