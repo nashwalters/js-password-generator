@@ -1,4 +1,19 @@
-// Assignment Code
+//Function to generate Random characters
+function randomUpper(){
+  return String.fromCharCode(Math.floor(Math.random()*26)+65)
+}
+function randomLower(){
+  return String.fromCharCode(Math.floor(Math.random()*26)+97)
+}
+function randomNumber(){
+  return String.fromCharCode(Math.floor(Math.random()*10)+48)
+}
+function randomSymbols(){
+  var symbols = ['@','%','+','\\','/',"'",'!','#','$','^','?',':',',',')','(','}','{',']','[','~','-','_','.', '<','>','&'];
+  returnsymbols[Math.floor(Math.random()*symbols.length)];
+}
+
+//// Assignment Code
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
