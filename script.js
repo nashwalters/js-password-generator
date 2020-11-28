@@ -36,23 +36,18 @@ if (!upperCase && !lowerCase && !numericChar && !specialChar) {
     return;
 }
 // Conditional if each character is selected.
-if (upperCase == true){
-    validChar = validChar.concat(randomUpper());
-    userChar.push(randomUpper());
+if (upperCase){
+  validChar = validChar.concat(upper);
 }
-if (lowerCase == true){
-    validChar = validChar.concat(randomLower());
-    userChar.push(randomLower());
+if (lowerCase){
+  validChar = validChar.concat(lower);
 }
-if (numericChar == true){
-  validChar = validChar.concat(randomNumber());
-    userChar.push(randomNumber());
+if (numericChar){
+  validChar = validChar.concat(numbers);
 }
 if (specialChar == true){
-    validChar = validChar.concat(randomSymbols());
-    userChar.push(randomSymbols());
+    validChar= validChar.concat(symbols);
 }
-
 //Loop to generate the password 
 for (var i= 0; i < passlength; i ++) {
   validChar = userChar[i];
