@@ -38,9 +38,9 @@ A web browser is need to view page.
 
 A web browser is need to view page.
 
-* Github page: [https://nashwalters.github.io/rmd-portfolio/](https://nashwalters.github.io/rmd-portfolio/)
+* Github page: 
 
-* To open in a new window, copy and paste: http://<span></span>nashwalters.github.io/rmd-portfolio/.
+* To open in a new window, copy and paste: http://<span></span>
 
 ## Screenshots
 The user interface is responsive, and adapts to multiple screen sizes.
