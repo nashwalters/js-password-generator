@@ -12,7 +12,7 @@ var passlength = prompt('How many characters would you like you password to have
 
 // conditionals to check password length.
 if (isNaN(passlength) === true) {
-  alert('Enter a number for password length.');
+  alert('Enter a number for the length of your password.');
   return;
 }
 if (passlength < 8) {
@@ -25,10 +25,10 @@ if (passlength > 128) {
 }
 
 // Variables to store characters to be selected.
-var upperCase = confirm('Would you like to include uppercase characters in your password?');
-var lowerCase = confirm('Would you like to include lowercase characters in your password?');
-var numericChar = confirm('Would you like to include numbers in your password?');
-var specialChar = confirm('Would you like to include special characters in your password?');
+var upperCase = confirm('Click OK to include uppercase characters in your password.');
+var lowerCase = confirm('Click OK to include lowercase characters in your password.');
+var numericChar = confirm('Click OK to include numbers in your password.');
+var specialChar = confirm('Click OK to include special characters in your password.');
 
 //Conditional to ensure that at least 1 character is selected.
 if (upperCase == false && lowerCase == false &&
