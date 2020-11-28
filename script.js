@@ -10,14 +10,15 @@ function randomNumber(){
 }
 function randomSymbols(){
   var symbols = ['@','%','+','\\','/',"'",'!','#','$','^','?',':',',',')','(','}','{',']','[','~','-','_','.', '<','>','&'];
-  returnsymbols[Math.floor(Math.random()*symbols.length)];
+  return symbols[Math.floor(Math.random()*symbols.length)];
 }
 
 //Function to generate password
 function generatePassword() {
-var 
-var userpassword = '';
-var passlength = prompt('How many characters would you like you password to have?');
+validChar =[];
+userChar = [];
+finalPassword = [];
+passlength = prompt('How many characters would you like you password to have?');
 
 // conditionals to check password length.
 if (isNaN(passlength) === true) {
@@ -43,14 +44,21 @@ var specialChar = confirm('Would you like to include special characters in your 
 if (upperCase == false && lowerCase == false &&
   numericChar == false && specialChar== false) {
     alert('You need at least one character to generate your password.')
-  }
-
 }
-
-
-
-
-
+// Conditional if each character is selected.
+if (upperCase == true){
+    userChar.push(randomUpper())
+}
+if (upperCase == true){
+    userChar.push(randomLower())
+}
+if (numericChar == true){
+    userChar.push(randomNumber())
+}
+if (specialChar == true){
+    userChar.push(randomSymbols())
+}
+}
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
