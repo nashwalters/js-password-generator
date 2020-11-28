@@ -34,14 +34,6 @@ A web browser is need to view page.
 
 * To open in a new window, copy and paste: http://<span></span>
 
-## Installation
-
-A web browser is need to view page.
-
-* Github page: 
-
-* To open in a new window, copy and paste: http://<span></span>
-
 ## Screenshots
 The user interface is responsive, and adapts to multiple screen sizes.
 <details>
