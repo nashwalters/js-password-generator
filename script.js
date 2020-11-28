@@ -58,6 +58,20 @@ if (numericChar == true){
 if (specialChar == true){
     userChar.push(randomSymbols())
 }
+
+//Loop to generate the password 
+for (var i= 0; i <= passlength; i ++) {
+  validChar = userChar[i];
+
+  finalPassword.push(validChar);
+}
+
+for (var i= 0; i <= userChar.length; i ++) {
+  finalPassword [i] = userChar[i];
+}
+
+return finalPassword.join('')
+
 }
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
