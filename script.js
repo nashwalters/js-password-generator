@@ -8,20 +8,16 @@ var symbols = ['@','"',';','=','\\','%','+','<','>','&','*','/',"'",'!','#', '$'
 function generatePassword() {
 var validChar =[];
 var finalPassword = "";
-var passlength = prompt('How many characters would you like you password to have?');
+var passLength = prompt('How many characters would you like your password to have?');
 
-// conditionals to check password length.
-if (isNaN(passlength) === true) {
-  alert('Enter a number for the length of your password. Click generate password to start again!');
-  return;
-}
-if (passlength < 8) {
-  alert('Password must have at least 8 characters. Click generate password to start again! ');
-  return;
-}
-if (passlength > 128) {
-  alert('Password must must be less than 129 characters. Click generate password to start again!');
-  return;
+// conditionals to check password length
+while (isNaN(passLength) === true) {
+  alert('Your password length must be provided as a number');
+  var passLength = (prompt("How many characters would you like your password to have?"));
+} 
+while(passLength < 8 || passLength > 128) {
+  alert("Your password length must be between 8 - 128 characters. Please try again");
+  var passLength = (prompt("How many characters would you like your password to have?"));
 }
 
 // Variables to store characters to be selected.
@@ -32,8 +28,7 @@ var specialChar = confirm('Click OK to include special characters in your passwo
 
 //Conditional to ensure that at least 1 character is selected.
 if (!upperCase && !lowerCase && !numericChar && !specialChar) {
-    alert('You need at least one character to generate your password. Click generate password to start again!')
-    return;
+  alert('You need at least one character to generate your password. Click generate password to start again!')
 }
 // Conditional if each character is selected.
 if (upperCase){
@@ -48,20 +43,14 @@ if (numericChar){
 if (specialChar == true){
     validChar= validChar.concat(symbols);
 }
-//Loop to generate the password 
-for (var i= 0; i < passlength; i ++) {
-  validChar = userChar[i];
-
-  finalPassword.push(validChar);
+//Loop to iterate random characters for the password
+for (var i = 0; i < passLength; i++) {
+  finalPassword = finalPassword + validChar[Math.floor(Math.random() * validChar.length)];
+ 
 }
 
-for (var i= 0; i < userChar.length; i ++) {
-  finalPassword[i] = userChar;
 }
 
-return finalPassword.join('')
-
-}
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
