@@ -1,24 +1,11 @@
-//Function to generate Random characters
-function randomUpper(){
-  return String.fromCharCode(Math.floor(Math.random()*26)+65)
-}
-function randomLower(){
-  return String.fromCharCode(Math.floor(Math.random()*26)+97)
-}
-function randomNumber(){
-  return String.fromCharCode(Math.floor(Math.random()*10)+48)
-}
-function randomSymbols(){
-  var symbols = ['@','%','+','\\','/',"'",'!','#','$','^','?',':',',',')','(','}','{',']','[','~','-','_','.', '<','>','&'];
-  return symbols[Math.floor(Math.random()*symbols.length)];
-}
+
 
 //Function to generate password
 function generatePassword() {
-validChar =[];
-userChar = [];
-finalPassword = [];
-passlength = prompt('How many characters would you like you password to have?');
+var validChar =[];
+var userChar = [];
+var finalPassword = [];
+var passlength = prompt('How many characters would you like you password to have?');
 
 // conditionals to check password length.
 if (isNaN(passlength) === true) {
@@ -47,27 +34,31 @@ if (upperCase == false && lowerCase == false &&
 }
 // Conditional if each character is selected.
 if (upperCase == true){
-    userChar.push(randomUpper())
+    validChar = validChar.concat(randomUpper());
+    userChar.push(randomUpper());
 }
-if (upperCase == true){
-    userChar.push(randomLower())
+if (lowerCase == true){
+    validChar = validChar.concat(randomLower());
+    userChar.push(randomLower());
 }
 if (numericChar == true){
-    userChar.push(randomNumber())
+  validChar = validChar.concat(randomNumber());
+    userChar.push(randomNumber());
 }
 if (specialChar == true){
-    userChar.push(randomSymbols())
+    validChar = validChar.concat(randomSymbols());
+    userChar.push(randomSymbols());
 }
 
 //Loop to generate the password 
-for (var i= 0; i <= passlength; i ++) {
+for (var i= 0; i < passlength; i ++) {
   validChar = userChar[i];
 
   finalPassword.push(validChar);
 }
 
-for (var i= 0; i <= userChar.length; i ++) {
-  finalPassword [i] = userChar[i];
+for (var i= 0; i < userChar.length; i ++) {
+  finalPassword[i] = userChar;
 }
 
 return finalPassword.join('')
