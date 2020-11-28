@@ -24,9 +24,10 @@ var randomFunc = {
 
 //Function to generate password
 function generatePassword() {
-var password = '';
 
+var password = '';
 var passlength = prompt('How many characters would you like you password to have?');
+
 // conditionals to check password length.
 if (isNaN(passlength) === true) {
   alert('Enter a number for password length.');
@@ -47,12 +48,23 @@ var lowerCase = confirm('Would you like to include lowercase characters in your 
 var numericChar = confirm('Would you like to include numbers in your password?');
 var specialChar = confirm('Would you like to include special characters in your password?');
 
+//Variable to see which items were selected.
+var options = upperCase + lowerCase + numericChar + specialChar
+// Array to of options to to filter selected character options.
+var optionsArr = [{upperCase}, {lowerCase},{numericChar},{specialChar}].filter(item=>Object.values(items)[0])
+
 //Conditional to ensure that at least 1 character is selected.
 if (upperCase == false && lowerCase == false &&
   numericChar == false && specialChar== false) {
     alert('You need at least one character to generate your password.')
   }
+
+
 }
+
+
+}
+
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
