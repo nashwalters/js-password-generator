@@ -25,7 +25,7 @@ var randomFunc = {
 //Function to generate password
 function generatePassword() {
 
-var password = '';
+var userpassword = '';
 var passlength = prompt('How many characters would you like you password to have?');
 
 // conditionals to check password length.
@@ -58,12 +58,18 @@ if (upperCase == false && lowerCase == false &&
   numericChar == false && specialChar== false) {
     alert('You need at least one character to generate your password.')
   }
+for (var i = 0; i < passlength; i+= options){
+  optionsArr.forEach(type=>{
+    var allowed = Object.keys(type)[0];
 
+    userpassword += randomFunc[allowed]();
+  });
+}
 
 }
 
 
-}
+
 
 
 // Assignment Code
