@@ -40,11 +40,18 @@ if (passlength > 128) {
   alert('Password must must be less than 129 characters.');
   return;
 }
+
 // Variables to store characters to be selected.
-var upperCase = confirm('Would you like to include uppercase characters in your password?')
-var lowerCase = confirm('Would you like to include lowercase characters in your password?')
-var numericChar = confirm('Would you like to include numbers in your password?')
-var specialChar = confirm('Would you like to include special characters in your password?')
+var upperCase = confirm('Would you like to include uppercase characters in your password?');
+var lowerCase = confirm('Would you like to include lowercase characters in your password?');
+var numericChar = confirm('Would you like to include numbers in your password?');
+var specialChar = confirm('Would you like to include special characters in your password?');
+
+//Conditional to ensure that at least 1 character is selected.
+if (upperCase == false && lowerCase == false &&
+  numericChar == false && specialChar== false) {
+    alert('You need at least one character to generate your password.')
+  }
 }
 
 // Assignment Code
