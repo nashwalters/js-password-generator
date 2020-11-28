@@ -40,6 +40,11 @@ if (passlength > 128) {
   alert('Password must must be less than 129 characters.');
   return;
 }
+// Variables to store characters to be selected.
+var upperCase = confirm('Would you like to include uppercase characters in your password?')
+var lowerCase = confirm('Would you like to include lowercase characters in your password?')
+var numericChar = confirm('Would you like to include numbers in your password?')
+var specialChar = confirm('Would you like to include special characters in your password?')
 }
 
 // Assignment Code
