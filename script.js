@@ -22,6 +22,25 @@ var randomFunc = {
 
 }
 
+//Function to generate password
+function generatePassword() {
+var password = '';
+
+var passlength = prompt('How many characters would you like you password to have?');
+// conditionals to check password length.
+if (isNaN(passlength) === true) {
+  alert('Enter a number for password length.');
+  return;
+}
+if (passlength < 8) {
+  alert('Password must have at least 8 characters.');
+  return;
+}
+if (passlength > 128) {
+  alert('Password must must be less than 129 characters.');
+  return;
+}
+}
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
