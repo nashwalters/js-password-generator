@@ -13,7 +13,17 @@ function randomSymbols(){
   returnsymbols[Math.floor(Math.random()*symbols.length)];
 }
 
-//// Assignment Code
+//Objects and the value they will return
+var randomFunc = {
+  upperCase: randomUpper,
+  lowerCase: randomLower,
+  numericChar: randomNumber,
+  specialChar: randomSymbols
+
+}
+
+
+// Assignment Code
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
