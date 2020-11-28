@@ -27,9 +27,14 @@ var numericChar = confirm('Click OK to include numbers in your password.');
 var specialChar = confirm('Click OK to include special characters in your password.');
 
 //Conditional to ensure that at least 1 character is selected.
-if (!upperCase && !lowerCase && !numericChar && !specialChar) {
-  alert('You need at least one character to generate your password. Click generate password to start again!')
+while (!upperCase && !lowerCase && !numericChar && !specialChar) {
+  alert('You need at least one character to generate your password.');
+  var upperCase = confirm('Click OK to include uppercase characters in your password.');
+  var lowerCase = confirm('Click OK to include lowercase characters in your password.');
+  var numericChar = confirm('Click OK to include numbers in your password.');
+  var specialChar = confirm('Click OK to include special characters in your password.');
 }
+
 // Conditional if each character is selected.
 if (upperCase){
   validChar = validChar.concat(upper);
