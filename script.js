@@ -1,57 +1,61 @@
-//Function to generate Random characters
-function randomUpper(){
-  return String.fromCharCode(Math.floor(Math.random()*26)+65)
-}
-function randomLower(){
-  return String.fromCharCode(Math.floor(Math.random()*26)+97)
-}
-function randomNumber(){
-  return String.fromCharCode(Math.floor(Math.random()*10)+48)
-}
-function randomSymbols(){
-  var symbols = ['@','%','+','\\','/',"'",'!','#','$','^','?',':',',',')','(','}','{',']','[','~','-','_','.', '<','>','&'];
-  returnsymbols[Math.floor(Math.random()*symbols.length)];
-}
-
-//Objects and the value they will return
-var randomFunc = {
-  upperCase: randomUpper,
-  lowerCase: randomLower,
-  numericChar: randomNumber,
-  specialChar: randomSymbols
-
-}
+//Arrays for characters
+var upper = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+var lower = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+var numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+var symbols = ['@','"',';','=','\\','%','+','<','>','&','*','/',"'",'!','#', '$','^','?',':',',',')','(','}','{',']','[','~','-','_','.'];
 
 //Function to generate password
 function generatePassword() {
-var password = '';
+var userChar = [];
+var userPassword = "";
+var passLength = prompt('How many characters would you like your password to have?');
 
-var passlength = prompt('How many characters would you like you password to have?');
-// conditionals to check password length.
-if (isNaN(passlength) === true) {
-  alert('Enter a number for password length.');
-  return;
-}
-if (passlength < 8) {
-  alert('Password must have at least 8 characters.');
-  return;
-}
-if (passlength > 128) {
-  alert('Password must must be less than 129 characters.');
-  return;
+// conditionals to check password length
+while (isNaN(passLength) === true) {
+  alert('Your password length must be provided as a number');
+  var passLength = (prompt("How many characters would you like your password to have?"));
+} 
+while(passLength < 8 || passLength > 128) {
+  alert("Your password length must be between 8 - 128 characters. Please try again");
+  var passLength = (prompt("How many characters would you like your password to have?"));
 }
 
 // Variables to store characters to be selected.
-var upperCase = confirm('Would you like to include uppercase characters in your password?');
-var lowerCase = confirm('Would you like to include lowercase characters in your password?');
-var numericChar = confirm('Would you like to include numbers in your password?');
-var specialChar = confirm('Would you like to include special characters in your password?');
+var upperCase = confirm('Click OK to include uppercase characters in your password.');
+var lowerCase = confirm('Click OK to include lowercase characters in your password.');
+var numericChar = confirm('Click OK to include numbers in your password.');
+var specialChar = confirm('Click OK to include special characters in your password.');
 
 //Conditional to ensure that at least 1 character is selected.
-if (upperCase == false && lowerCase == false &&
-  numericChar == false && specialChar== false) {
-    alert('You need at least one character to generate your password.')
-  }
+while (!upperCase && !lowerCase && !numericChar && !specialChar) {
+  alert('You need at least one character to generate your password.');
+  var upperCase = confirm('Click OK to include uppercase characters in your password.');
+  var lowerCase = confirm('Click OK to include lowercase characters in your password.');
+  var numericChar = confirm('Click OK to include numbers in your password.');
+  var specialChar = confirm('Click OK to include special characters in your password.');
+}
+
+// Conditional if each character is selected.
+if (upperCase) {
+  userChar = userChar.concat(upper);
+}
+if (lowerCase) {
+  userChar = userChar.concat(lower);
+}
+if (numericChar) {
+  userChar = userChar.concat(numbers);
+}
+if (specialChar) {
+  userChar = userChar.concat(symbols);
+}
+
+//Loop to iterate random characters for the password
+for (var i = 0; i < passLength; i++) {
+  userPassword = userPassword + userChar[Math.floor(Math.random() * userChar.length)];
+ 
+}
+return userPassword;
+
 }
 
 // Assignment Code
