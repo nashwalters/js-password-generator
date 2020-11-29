@@ -16,7 +16,7 @@ while (isNaN(passLength) === true) {
   var passLength = (prompt("How many characters would you like your password to have?"));
 } 
 while(passLength < 8 || passLength > 128) {
-  alert("Your password length must be between 8 - 128 characters. Please try again");
+  alert("Your password length must be between 8 - 128 characters. Please try again.");
   var passLength = (prompt("How many characters would you like your password to have?"));
 }
 
