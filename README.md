@@ -37,16 +37,16 @@ A web browser is need to view page.
 ## Screenshots
 The user interface is responsive, and adapts to multiple screen sizes.
 <details>
-  <summary>Website at 9px</summary>
-  <img src="" alt= "screenshot of site at 922px">
+  <summary>Larger Screen</summary>
+  <img src="img/screencapture-large.png" alt= "screenshot of site at 922px">
 </details>
 <details>
-  <summary>Website at 768px</summary>
-   <img src="" alt= "screenshot of site at 768px">
+  <summary>Medium Screen</summary>
+   <img src="img/screencapture-medium.png" alt= "screenshot of site at 768px">
 </details>
 <details>
-  <summary>Website at 400px</summary>
-   <img src="" alt= "screenshot of site at 400px">
+  <summary>Small Screen</summary>
+   <img src="img/screencapture-small.png" alt= "screenshot of site at 400px">
 </details>
 
 ## Credits
