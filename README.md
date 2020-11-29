@@ -55,6 +55,6 @@ The user interface is responsive, and adapts to multiple screen sizes.
 * [Adam Simonini](https://github.com/adamsimonini)
 * Kyle Daniels
 
-## License [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+## License[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Copyright © 2020 Nash Walters
