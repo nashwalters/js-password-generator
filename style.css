@@ -91,9 +91,10 @@ header {
 .btn:hover {
   border: solid 3px darkred;
 }
+
 button[disabled] {
   cursor: default;
-  background: #c0c7cf;
+  background: darkred;
   border-radius: 12px;
 }
 
