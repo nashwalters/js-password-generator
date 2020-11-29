@@ -6,8 +6,8 @@ var symbols = ['@','"',';','=','\\','%','+','<','>','&','*','/',"'",'!','#', '$'
 
 //Function to generate password
 function generatePassword() {
-var validChar =[];
-var finalPassword = "";
+var userChar = [];
+var userPassword = "";
 var passLength = prompt('How many characters would you like your password to have?');
 
 // conditionals to check password length
@@ -36,23 +36,25 @@ while (!upperCase && !lowerCase && !numericChar && !specialChar) {
 }
 
 // Conditional if each character is selected.
-if (upperCase){
-  validChar = validChar.concat(upper);
+if (upperCase) {
+  userChar = userChar.concat(upper);
 }
-if (lowerCase){
-  validChar = validChar.concat(lower);
+if (lowerCase) {
+  userChar = userChar.concat(lower);
 }
-if (numericChar){
-  validChar = validChar.concat(numbers);
+if (numericChar) {
+  userChar = userChar.concat(numbers);
 }
-if (specialChar == true){
-    validChar= validChar.concat(symbols);
+if (specialChar) {
+  userChar = userChar.concat(symbols);
 }
+
 //Loop to iterate random characters for the password
 for (var i = 0; i < passLength; i++) {
-  finalPassword = finalPassword + validChar[Math.floor(Math.random() * validChar.length)];
+  userPassword = userPassword + userChar[Math.floor(Math.random() * userChar.length)];
  
 }
+return userPassword;
 
 }
 
