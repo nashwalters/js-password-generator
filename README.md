@@ -30,9 +30,9 @@ As a result the password generated will be complex and will require more time fo
 
 A web browser is need to view page.
 
-* Github page: []()
+* Github page: [https://nashwalters.github.io/js-password-generator/.](https://nashwalters.github.io/js-password-generator/.)
 
-* To open in a new window, copy and paste: http://<span></span>
+* To open in a new window, copy and paste: https://<span></span>nashwalters.github.io/js-password-generator/.
 
 ## Screenshots
 The user interface is responsive, and adapts to multiple screen sizes.
