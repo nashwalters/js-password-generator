@@ -14,7 +14,17 @@ body,
 
 body {
   font-family: sans-serif;
-  background-color: #f9fbfd;
+  background-color: rgb(172, 167, 167);
+  font-size: 40px;
+}
+
+h1{
+  color:hsl(360, 91%, 36%);
+  font-family: 'Arima Madurai', Courier, monospace;
+}
+
+h2{
+  text-align: center ;
 }
 
 .wrapper {
@@ -86,6 +96,7 @@ header {
   padding: 14px 34px;
   text-align: center;
   cursor: pointer;
+  outline: none;
 }
 
 .btn:hover {
