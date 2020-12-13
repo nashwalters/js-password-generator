@@ -17,18 +17,18 @@ Passwords are undoubtedly essential to security, but let's be honest!, they are 
 ## Technology 
 <img src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/><img src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/><img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
 
-Javascript is really the star of this project.
+JavaScript is really the star of this project. The starter code was only HTML and CSS.
 
 The key features of this project is that it will generate a password that:
 * Satisifies general password length criteria which is minimum 8 to 128 characters in length. The user is given a prompt to select the password length and is given an alert if the length doesn't match the criteria.
-* The password generated can use a combination of characters. The user must confirm if they would like to include include numbers, uppercase and lowercase letters and special character like commas, star and percent sign. At least one character type should be selected.
+* The password generated can use a combination of characters. The user must confirm if they would like to include include numbers, uppercase, lowercase letters and special character like commas, star and percent sign. At least one character type should be selected.
 * The characters are random.
 
 As a result the password generated will be complex and will require more time for hackers to guess.
 
 ## Installation
 
-A web browser is need to view page.
+A web browser is need to view page. The CSS and JavaScript is linked to the HTML.
 
 * Github page: [https://nashwalters.github.io/js-password-generator/.](https://nashwalters.github.io/js-password-generator/.)
 
@@ -37,24 +37,24 @@ A web browser is need to view page.
 ## Screenshots
 The user interface is responsive, and adapts to multiple screen sizes.
 <details>
-  <summary>Website at 9px</summary>
-  <img src="" alt= "screenshot of site at 922px">
+  <summary>Larger Screen</summary>
+  <img src="img/screencapture-large.png" alt= "screenshot of site on a large screen">
 </details>
 <details>
-  <summary>Website at 768px</summary>
-   <img src="" alt= "screenshot of site at 768px">
+  <summary>Medium Screen</summary>
+   <img src="img/screencapture-medium.png" alt= "screenshot of site on a medium screen">
 </details>
 <details>
-  <summary>Website at 400px</summary>
-   <img src="" alt= "screenshot of site at 400px">
+  <summary>Small Screen</summary>
+   <img src="img/screencapture-small.png" alt= "screenshot of site on a small screen">
 </details>
 
 ## Credits
 
-* Carleton University Coding Bootcamp team- 
+* Carleton University Coding Bootcamp team
 * [Adam Simonini](https://github.com/adamsimonini)
 * Kyle Daniels
 
-## License [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+## License[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Copyright © 2020 Nash Walters
