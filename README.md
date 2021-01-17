@@ -7,6 +7,7 @@ This project is a password generator that was created using a starter code.
 * [Installation](#installation)
 * [Screenshots](#screenshots)
 * [Credits](#credits)
+* [Contact](#contact)
 * [License](#license)
 
 ## General Information
@@ -35,7 +36,11 @@ A web browser is need to view page. The CSS and JavaScript is linked to the HTML
 * To open in a new window, copy and paste: https://<span></span>nashwalters.github.io/js-password-generator/.
 
 ## Screenshots
-The user interface is responsive, and adapts to multiple screen sizes.
+<p align="center"> 
+<img src="assets/img/passwordg.png" alt= "screenshot of my app" width= "500px">
+</p>
+
+#### The user interface is responsive and adapts to all screen sizes. Click on the arrows to drop down images at various screen sizes.
 <details>
   <summary>Larger Screen</summary>
   <img src="img/screencapture-large.png" alt= "screenshot of site on a large screen">
@@ -54,6 +59,10 @@ The user interface is responsive, and adapts to multiple screen sizes.
 * Carleton University Coding Bootcamp team
 * [Adam Simonini](https://github.com/adamsimonini)
 * Kyle Daniels
+
+## Contact
+
+Nash Walters - nash.walters@outlook.com
 
 ## License[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
